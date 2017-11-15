@@ -1,6 +1,6 @@
 # vue-firebase-authentication
 
-> A Vue.js project learning experiment
+> A Vue.js project learning experiment authentication with Firebase
 
 ## Build Setup
 
