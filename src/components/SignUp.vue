@@ -1,11 +1,30 @@
 <template>
-	<div class="sign-up">
-		<h2>Create your account Firebase</h2>
-		<input type="text" v-model="email" placeholder="Enter your email">
-		<input type="password" v-model="password" placeholder="Your password">
-		<button v-on:click="signUp">Sign Up</button>
-		<router-link :to="{name: 'Login'}">Back to Login</router-link>
-		<router-link :to="{name: 'HelloWorld'}">Back to Dashboard</router-link>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<div class="text-center">
+					<h4>Create your account Firebase + Vue.JS</h4>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="form-group">
+	        		<label>Email</label>
+	        		<input type="text" class="form-control" v-model="email" placeholder="Enter your email">
+	        	</div>
+	        	<div class="form-group">
+	        		<label>Password</label>
+	        		<input type="password" class="form-control" v-model="password" placeholder="Your password">
+	        	</div>
+	        	<div class="form-group">
+	        		<label></label>
+	        		<button class="btn btn-success" v-on:click="signUp">Sign Up</button>
+	        	</div>
+	        	<br>
+						<router-link :to="{name: 'Login'}">Back to Login</router-link>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 

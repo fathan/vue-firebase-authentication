@@ -1,14 +1,30 @@
 <template>
-	<div class="login">
-		<h2>Sign In</h2>
-		<div class="login">
-			<input type="text" v-model="email" placeholder="Enter your email">
-			<input type="password" v-model="password" placeholder="Your password">
-			<button v-on:click="signIn">Sign In</button>
-			<p>You don't have an account?</p>
-			<router-link :to="{name: 'SignUp'}">You can't create one</router-link>
-			<router-link :to="{name: 'HelloWorld'}">Back to Dashboard</router-link>
-		</div>
+	<div class="container">
+		<div class="row">
+      <div class="col-md-4 col-md-offset-4">
+      	<div class="text-center">
+      		<h4>Sign In Account Firebase + Vue.JS</h4>
+      	</div>
+	      <div class="panel panel-default">
+	        <div class="panel-body">
+	        	<div class="form-group">
+	        		<label>Email</label>
+	        		<input type="text" class="form-control" v-model="email" placeholder="Enter your email">
+	        	</div>
+	        	<div class="form-group">
+	        		<label>Password</label>
+	        		<input type="password" class="form-control" v-model="password" placeholder="Your password">
+	        	</div>
+	        	<div class="form-group">
+	        		<label></label>
+	        		<button class="btn btn-success" v-on:click="signIn">Sign In</button>
+	        	</div>
+	        	<br>
+		        <p>You don't have an account? <router-link :to="{name: 'SignUp'}">You can't create one</router-link></p>
+	        </div>
+	      </div>
+      </div>
+    </div>
 	</div>
 </template>
 
@@ -49,5 +65,5 @@ export default {
 </script>
 
 <style scoped>
-	
+
 </style>
